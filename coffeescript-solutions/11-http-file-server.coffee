@@ -6,5 +6,4 @@ path = process.argv[3]
 http.createServer( (request, response) ->
     fs.createReadStream path
         .pipe(response)
-
 ).listen(port)
